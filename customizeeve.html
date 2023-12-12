@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fifth Jquery</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("h5").on("click", function(){
+$("div").trigger("bgchange");
+}); 
+$("div").on("bgchange",function(){
+$(this).css("background-color","yellow");
+});
+});
+</script>
+<style>
+div{
+width:200px;
+height:200px;
+background-color:cyan;
+position:absolute;
+}
+</style>
+</head>
+<body>
+<div>
+<h3>Click me</h3>
+<h3>or me</h3>
+</div>
+</body>
+</html>

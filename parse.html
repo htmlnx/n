@@ -1,0 +1,22 @@
+<!Doctype html>
+<head>
+<title></title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function()
+{var a='{"name":"abc","age":20,"gender":"Mumbai"}'
+var obj=JSON.parse(a);
+$("#p1").text("string is"+a);
+$("#p2").text("Object:age is"+obj.age);
+var t=JSON.stringify(obj);
+$("#p3").text("text converted from obj is"+t);
+}
+);
+</script>
+</head>
+<body>
+<p id=p1>para 1</p>
+<p id=p2>para 2</p>
+<p id=p3>para 3</p>
+</body>
+</html>

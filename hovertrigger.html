@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>trigger</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#p1").click(function(){
+$(this).slideUp("slow");
+});
+$("#p2").hover(function(){
+$(this).css("background-color","blue");},
+function(){
+$(this).css("background-color","yellow");
+});
+$("#p3").on("click",function(){alert("This is on event");
+});
+$("button").click(function(){
+$("#p3").off("click");
+});
+$("#p4").on("click",function(){
+$(this).trigger("bgchange");
+});
+$("#p4").on("bgchange", function(){$(this).css("background-color","blue");
+});
+});
+</script>
+</head>
+<body>
+<p id=p1>Click</p>
+<p id=p2>Hover</p>
+<p id=p3>This is a Para 3</p>
+<p id=p4>Click to change bg</p>
+<button>Remove Click</button>
+</body>
+</html>

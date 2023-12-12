@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>slides</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#flip1").click(function(){$("#Panel1").slideDown();});
+$("#flip2").click(function(){$("#Panel2").slideUp();});
+$("#flip3").click(function(){$("#Panel3").slideToggle();});
+});
+</script><style>
+div{
+padding:5px;
+background-color:pink;
+border:solid 1px black;
+text-align:center;
+}
+#Panel1{
+padding:50px;
+display:none;
+}
+#Panel2,#Panel3{
+padding:50px;
+}
+</style>
+</head>
+<body>
+<div id="flip1">Slide Down</div>
+<div id="Panel1">this is slide down</div>
+<div id="flip2">Slide Up</div>
+<div id="Panel2">this is slide up</div>
+<div id="flip3">Toggle</div>
+<div id="Panel3">this is toggle</div>
+</body></html>

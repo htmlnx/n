@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){$("p").show();});
+		$("#b1").click(function(){$("#p1").hide();});
+		$(".bclass").click(function(){$(".pclass").hide();});
+		$("#b2").click(function(){$("p").hide();});
+});	</script>
+</head><body>
+<button>show</button>
+<button id='b1'>hidebyid</button>
+<button class='bclass'>hidebyclass</button>
+<button id='b2'>hideall</button>
+<p id="p1">dom generates node when a page is loaded</p>
+<p class="pclass">hello world </p>
+<p>in these there are 2 nodes. text node and element node </p>
+</body></html>

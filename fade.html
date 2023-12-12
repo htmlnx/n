@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>div{
+	width:80px;
+	height:80px;
+}
+#d1{
+background-color:red;}
+#d2{
+background-color:green;}
+#d3{
+background-color:blue;}</style>
+<title>JQuery</title>
+<script src="jquery.js"></script>
+<script>$(document).ready(function(){
+$("#b1").click(function(){$("#d1").fadeIn();$("#d2").fadeIn("slow");$("#d3").fadeIn("fast");});
+$("#b2").click(function(){$("#d1").fadeOut();$("#d2").fadeOut("slow");$("#d3").fadeOut("fast");});
+$("#b3").click(function(){$("#d1").fadeToggle();$("#d2").fadeToggle("slow");$("#d3").fadeToggle("fast");});
+$("#b4").click(function(){$("#d1").fadeTo("slow",0.2);$("#d2").fadeTo("slow",0.6);$("#d3").fadeTo("slow",0.8);})
+});</script>
+</head><body>
+<button id="b1">fadein</button>
+<button id="b2">fadeout</button>
+<button id="b3">fadetoggle</button>
+<button id="b4">fadeto</button>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div></body></html>

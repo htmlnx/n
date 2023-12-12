@@ -1,0 +1,17 @@
+<!Doctype html>
+<head>
+<title>create</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function()
+{var a='{"name":"abc","age":20,"gender":"Mumbai"}'
+localStorage.setItem("obj",a)
+var t=localStorage.getItem("obj");
+$("#p1").text(t);
+});
+</script>
+</head>
+<body>
+<p id=p1>para 1</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A&R CSS elements</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+$("h1,h2").addClass("class2");
+$("p").addClass("class1");});
+$("#b2").click(function(){
+$("h1,h2").removeClass("class2");
+$("p").removeClass("class1");});
+});
+</script>
+<style>
+.class1{
+font-weight:bold;
+font-size:xx-large;
+}
+.class2{
+color:blue;
+}
+</style>
+</head>
+<body>
+<button id="b1">Add Class</button>
+<button id="b2">Remove Class</button>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<p id="p1"><b>Paragraph 1</b></p>
+<p id="p2"><b>Paragraph 2</b></p>
+</body>
+</html>

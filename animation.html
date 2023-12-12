@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("div").animate({
+"height":"300px",
+"opacity":"0.5"},"slow");
+$("div").animate({
+"height":"200px",
+"left":"200px"},"slow");
+});
+});
+</script>
+<style>
+div{
+width:200px;
+height:200px;
+background-color:red;
+position:absolute;
+}
+</style>
+</head>
+<body>
+<p>This is Paragraph</p>
+<button>Animation</button>
+<div></div>
+</body>
+</html>
